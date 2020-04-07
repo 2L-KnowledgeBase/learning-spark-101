@@ -24,32 +24,38 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 
 #### [Structured Dataset Query & SQL](./SparkSQL/README.md)
 
-> *SparkSQL在构建现代化数仓中相当流行*
+> SparkSQL在构建现代化数仓中相当流行, *现代化数仓*这一中文概念，请参考eBay的俞育才老师在18年QCON上的sharing，由于MPP(e.g. Teradata/Netezza/..)本身高昂的成本, 越来越多的公司开始将离线分析从传统数仓迁移到现代化数仓(HDFS + Hive + SparkSQL).
+
+关于 eBay DSS(Data Services and Solutions) Team 完成迁移的sharing 从 "Spark& AI Summit Europe - 2018/10" 开始到国内的QCon/Spark&AI Meetup 等等..
+1. [Moving eBay’s Data Warehouse Over to Apache Spark (Kimberly Curtis & Brian Knauss)](https://www.youtube.com/watch?v=d410R_H9FX0)
+2. [Analytical DBMS to Apache Spark Auto Migration Framework with Edward Zhang and Lipeng Zhu (eBay)](https://www.youtube.com/watch?v=dahIDF0SKPw)
+3. [Deep Dive of ADBMS Migration to Apache Spark—Use Cases Sharing - Keith Sun eBay](https://www.youtube.com/watch?v=i-L2wtN9tyg)
+4. [Experience Of Optimizing Spark SQL When Migrating from MPP Database - Yucai Yu and Yuming Wang eBay](https://www.youtube.com/watch?v=BcenJqszr6g)
 
 #### [Structured Streaming](./SparkStreming/README.md)
 
-> *SparkStreaming由于Spark2.0后Dataset API的统一, 使得SparkStreaming可以受利于Spark SQL*
+> SparkStreaming由于Spark2.0后Dataset API的统一, 使得SparkStreaming使用Spark SQL APIs
 
 #### [GraphX](./GraphX/README.md)
 
-> *图计算*
-
 #### [MLlib](./MLlib/README.md)
-
-> *机器学习*
-
-### Awesome Study Resources
-
-Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical versions, find [here](http://spark.apache.org/documentation.html).
-
-1. 《Learning Spark》 ([En](https://github.com/KnowledgeBase-ForAnEngineer/kindle/blob/master/OReilly.Learning.Spark.2015.1.pdf) / [译版2-9章](https://github.com/2L-knowledgebase/kindle/tree/master/LearningSpark%20%E4%B8%AD%E6%96%87%E7%89%88)) [@读书笔记](./eBooks/Learning_Spark)
-2. [Mastering Spark SQL](https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/)
-3. [Mastering Apache Spark](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/)
-4. [Advanced Apache Spark Training - Sameer Farooqui (Databricks)](https://www.youtube.com/watch?v=7ooZ4S7Ay6Y&feature=youtu.be)
-
 
 ### [How to setup Spark?](./installation.md)
 
 ### [Submit Spark Application](./submit.md)
 
 ### [Spark Configuration](./configuration.md)
+
+### Awesome Study Resources
+
+Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical versions, find [here](http://spark.apache.org/documentation.html).
+
+1. 《Learning Spark》 ([En](https://github.com/KnowledgeBase-ForAnEngineer/kindle/blob/master/OReilly.Learning.Spark.2015.1.pdf) / [译版2-9章](https://github.com/2L-knowledgebase/kindle/tree/master/LearningSpark%20%E4%B8%AD%E6%96%87%E7%89%88)) [@Notes](./ReadingNotes/Learning_Spark)
+2. [Mastering Spark SQL](https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/)
+3. [Mastering Apache Spark](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/)
+4. [Advanced Apache Spark Training - Sameer Farooqui (Databricks)](https://www.youtube.com/watch?v=7ooZ4S7Ay6Y&feature=youtu.be)
+
+### Analyze Source Code & Contribute to the Community
+
+1. [Shared Analysis](./Source-Code-Analysis/README.md)
+2. [Contribution](./Contribution/README.md)

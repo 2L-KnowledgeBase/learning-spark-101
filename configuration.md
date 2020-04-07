@@ -64,18 +64,6 @@ All property keys are started with `spark.aaa.bbb`, e.g. Spark UI related proper
 
 **However, as mentioned above, there are so many properties that some of them are not documented on offical doc site. For example, you can find more Spark SQL configurations [here in <Mastering Spark SQL>](https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-properties.html).**
 
-[Dynamic Allocation (of Executors)](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-dynamic-allocation.html) & [ExternalShuffleService](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-ExternalShuffleService.html)
-```
-spark.dynamicAllocation.enabled=true;
-spark.dynamicAllocation.minExecutors=2;
-spark.dynamicAllocation.maxExecutors=100;
-spark.shuffle.service.enabled=true;
-
-# Dynamic allocation is enabled using spark.dynamicAllocation.enabled setting. When enabled, it is assumed that the External Shuffle Service is also used (it is not by default as controlled by spark.shuffle.service.enabled property).
-
-# AE: For users who enabled external shuffle service, please also upgrade external shuffle service to use adaptive execution feature.
-```
-
 ### Environment variables
 
 ### log4j.properties
@@ -87,3 +75,16 @@ Use options below to overwrite log4j.properties of driver/executor:
 --files ./lib/log4j-spark2.properties
 --conf'spark.executor.extraJavaOptions=-Dlog4j.configuration=log4j-spark2.properties'
 ```
+
+#### [Dynamic Allocation (of Executors)](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-dynamic-allocation.html) & [ExternalShuffleService](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-ExternalShuffleService.html)
+
+```
+spark.dynamicAllocation.enabled=true;
+spark.dynamicAllocation.minExecutors=2;
+spark.dynamicAllocation.maxExecutors=100;
+spark.shuffle.service.enabled=true;
+```
+
+**DynamicAllocation** is enabled using `spark.dynamicAllocation.enabled` setting. When enabled, it is assumed that the **External Shuffle Service** is also used (it is not by default as controlled by spark.shuffle.service.enabled property), if not enabled, Exception would be thrown.
+
+AE (Adaptive Execution) in Spark2.3 is not compatible with **DynamicAllocation****, you have to upgrade external shuffle service by yourself. **TBD: since AE has been added into 3.0, not sure current compatibility.**
