@@ -1,0 +1,1 @@
+More details refer to https://spark.apache.org/docs/latest/submitting-applications.html .
