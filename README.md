@@ -20,7 +20,7 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 
 > 除了可以直接使用上面提到的 [RDD](./RDD/README.md)/Dataset APIs 编写 SparkApplicaiton 之外. Spark 还提供如下针对特定场景的内嵌库 (built-in library).
 
-<img width="500" alt="spark stack" src="http://spark.apache.org/images/spark-stack.png">
+<img width="300" alt="spark stack" src="http://spark.apache.org/images/spark-stack.png">
 
 #### [Structured Dataset Query & SQL](./SparkSQL/README.md)
 
