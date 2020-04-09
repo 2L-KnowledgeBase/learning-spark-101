@@ -64,4 +64,4 @@ Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical 
 ### Read Source Code & Contribute to the Community
 
 1. [Shared Analysis Track](Source-Code-Analysis/README.md)
-2. [Known issues & Contribution](Contribution/README.md)
+2. [Known issues & Contribution](Contribution)

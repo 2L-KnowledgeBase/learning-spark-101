@@ -47,3 +47,6 @@ If you want to leverage a Hive UDF in SparkSQL. You can try:
 Also, I still recommend you to use native UDF support of SparkSQL.
 - https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-udfs.html
 - https://docs.databricks.com/spark/latest/spark-sql/udf-scala.html
+
+
+#### - [ClassCastException occurs when executing sql statement "insert into" on hbase table](SPARK-6628.md)
