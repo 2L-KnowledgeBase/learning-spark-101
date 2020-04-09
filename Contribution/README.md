@@ -49,4 +49,4 @@ Also, I still recommend you to use native UDF support of SparkSQL.
 - https://docs.databricks.com/spark/latest/spark-sql/udf-scala.html
 
 
-#### - [ClassCastException occurs when executing sql statement "insert into" on hbase table](SPARK-6628.md)
+#### - [java.lang.ClassCastException: org.apache.hadoop.hive.hbase.HiveHBaseTableOutputFormat cannot be cast to org.apache.hadoop.hive.ql.io.HiveOutputFormat](SPARK-6628.md)

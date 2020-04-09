@@ -1,11 +1,8 @@
-> https://issues.apache.org/jira/browse/SPARK-6628
+> [ClassCastException occurs when executing sql statement "insert into" on hbase table](https://issues.apache.org/jira/browse/SPARK-6628)
 
 This happend when :
 1. You created a Hive external table point to Hbase
 2. Try to `INSERT INTO` this table in SparkSQL.
-
-The major issue is:
-`org.apache.hadoop.hive.hbase.HiveHBaseTableOutputFormat` cannot be cast to `org.apache.hadoop.hive.ql.io.HiveOutputFormat`
 
 Hive community fixed this issue in version 4.0.0 (https://issues.apache.org/jira/browse/HIVE-20678).
 
