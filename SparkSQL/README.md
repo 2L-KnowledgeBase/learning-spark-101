@@ -4,7 +4,7 @@
 
 <Learing Spark, Chapter3>:" Users create RDDs in two ways: by loading an external dataset, or by distributing a collection of objects (e.g., a list or set) in their driver program (e.g. `JavaRDD<String> lines = sc.parallelize(Arrays.asList("pandas", "i like pandas"));`).
 
-As "by loading an external dataset" mentioned here, we usually leverage [DataFrameReader APIs](https://spark.apache.org/docs/2.4.3/api/java/index.html) to do this work. **Don't feel confused with this name since it's just a legacy name and you can also treat it as "DatasetReader"**.
+As "by loading an external dataset" mentioned here, we usually leverage [DataFrameReader APIs](https://spark.apache.org/docs/2.4.3/api/java/index.html) to do this work. **Don't feel confused with this name since it's just a legacy name and you can also treat it as "Dataset<Row>Reader"**.
 
 Natively, DataFrameReader support reading different types of files (csv/parquet/orc/text/json) from both local or HDFS (`file://` vs `hdfs://`) and jdbc way to connect relational databases. There are also some thrid party Dataset Reader/Writer extensions, for example:
 1. MongoDB: https://docs.mongodb.com/spark-connector/master/java/datasets-and-sql/
@@ -21,7 +21,6 @@ Similiar to create RDDs, you can retire a RDD in two ways:
 
 ### Indexs
 
-- [Dataframe API, since spark1.3](./dataframe.md)
 - [spark known bugs](./spark-bugs.md)
 - [spark configuration](./spark-configuration.md)
 - [migrate from spark1.x to spark2.x](spark1_to_spark2.md)
@@ -37,11 +36,11 @@ Similiar to create RDDs, you can retire a RDD in two ways:
 - [(hive-support) what's bucket table & why use it?](./bucket-table.md)
 - [sparkSQL adaptive execution](./spark-with-AE.md)
 
-### SparkSQL Limits 
+### Current Limitation
 
-1. [Recursive Query](http://sqlandhadoop.com/how-to-implement-recursive-queries-in-spark/)
+- [Recursive Query](http://sqlandhadoop.com/how-to-implement-recursive-queries-in-spark/)
 
 ### Legacy of 1.x
 
-1. `Dataframe` APIs (>=1.3, <2.0)
-2. Migrate from 1.x to 2.x
+- `Dataframe` APIs (>=1.3, <2.0)
+- 1.x to 2.x migration
