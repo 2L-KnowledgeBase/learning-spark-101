@@ -53,4 +53,4 @@ Also, I still recommend you to use native UDF support of SparkSQL.
 
 #### - [parquet.io.ParquetDecodingException: Can not read value at 0 in block -1 in file](./SPARK-20937.md)
 
-#### - `org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 855, Column 28: Redefinition of parameter "agg_expr_11"` 
+#### - [`org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 855, Column 28: Redefinition of parameter "agg_expr_11"`](./SPARK-23986.md)
