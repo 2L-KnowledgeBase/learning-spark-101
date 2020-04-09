@@ -18,11 +18,11 @@ It provides high-level [APIs in Scala/Java/Python and R](https://spark.apache.or
 
 It also supports a rich set of higher-level tools including Spark SQL for SQL and DataFrames, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for stream processing.
 
-> 除了可以直接使用上面提到的 [RDD](RDD/README.md)/Dataset APIs 编写 SparkApplicaiton 之外. Spark 还提供如下针对特定场景的内嵌库 (built-in library).
+> 除了可以直接使用上面提到的 [RDD](RDD/)/Dataset APIs 编写 SparkApplicaiton 之外. Spark 还提供如下针对特定场景的内嵌库 (built-in library).
 
 <img width="300" alt="spark stack" src="http://spark.apache.org/images/spark-stack.png">
 
-### - [Structured Dataset Query & SQL](SparkSQL/README.md)
+### - [Structured Dataset Query & SQL](SparkSQL/)
 
 > SparkSQL在构建现代化数仓中相当流行, *现代化数仓*这一中文概念，请参考[eBay的俞育才老师在18年QCON上的sharing](Reading-Notes/eBay-俞育才-构建现代化数据仓库.v4.pdf)，由于MPP(e.g. Teradata/Netezza/Greenplum/..)本身高昂的成本, 越来越多的公司开始将离线分析从传统数仓迁移到现代化数仓(HDFS + Hive + SparkSQL).
 
@@ -32,13 +32,13 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 3. [Deep Dive of ADBMS Migration to Apache Spark—Use Cases Sharing - Keith Sun eBay](https://www.youtube.com/watch?v=i-L2wtN9tyg)
 4. [Experience Of Optimizing Spark SQL When Migrating from MPP Database - Yucai Yu and Yuming Wang eBay](https://www.youtube.com/watch?v=BcenJqszr6g)
 
-### - [Structured Streaming](SparkStreming/README.md)
+### - [Structured Streaming](SparkStreming/)
 
 > SparkStreaming由于Spark2.0后Dataset API的统一, 使得SparkStreaming使用Spark SQL APIs
 
-### - [GraphX](GraphX/README.md)
+### - [GraphX](GraphX/)
 
-### - [MLlib](MLlib/README.md)
+### - [MLlib](MLlib/)
 
 #### [How to setup Spark?](installation.md)
 
@@ -63,5 +63,5 @@ Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical 
 
 ### Read Source Code & Contribute to the Community
 
-1. [Shared Analysis Track](Source-Code-Analysis/README.md)
+1. [Shared Analysis Track](Source-Code-Analysis/)
 2. [Known issues & Contribution](Contribution)
