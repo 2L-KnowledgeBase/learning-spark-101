@@ -10,7 +10,7 @@ Spark is a `___` ? Currently (these definitions are changable in developer commu
 
 > 关于 *是什么的定义(what-is)* 时常随着 开源项目本身的发展 以及 PMC Member们的协商 而进行调整 (下一个Major Releasae), 简单来说, Spark是一个分布式计算框架(引擎), 很多开发者常喜欢用它和MapReduce做比较.
 
-**#Popular Topic#**: [*Why Spark is better than Hadoop? What is the difference between them?*](mapreduce-vs-spark.md)
+- [Why Spark is better than Hadoop? What is the difference between them?](mapreduce-vs-spark.md)
 
 It provides high-level [APIs in Scala/Java/Python and R](https://spark.apache.org/docs/2.4.3/api.html), and an optimized engine that supports general computation graphs(**DAG, Directed Acyclic Graph**) for data analysis. 
 
@@ -64,4 +64,4 @@ Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical 
 ### Read Source Code & Contribute to the Community
 
 1. [Shared Analysis Track](Source-Code-Analysis/README.md)
-2. [Know issues & Contribution](Contribution/README.md)
+2. [Known issues & Contribution](Contribution/README.md)
