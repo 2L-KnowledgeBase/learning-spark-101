@@ -1,8 +1,8 @@
-## Learning Spark 101
+# Learning Spark 101
 
 > http://spark.apache.org
 
-### What is Spark ?
+#### What is Spark ?
 
 Spark is a `___` ? Currently (these definitions are changable in developer community and updated overtime) we said ...
 
@@ -22,7 +22,7 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 
 <img width="300" alt="spark stack" src="http://spark.apache.org/images/spark-stack.png">
 
-#### [Structured Dataset Query & SQL](SparkSQL/README.md)
+### - [Structured Dataset Query & SQL](SparkSQL/README.md)
 
 > SparkSQL在构建现代化数仓中相当流行, *现代化数仓*这一中文概念，请参考[eBay的俞育才老师在18年QCON上的sharing](Reading-Notes/eBay-俞育才-构建现代化数据仓库.v4.pdf)，由于MPP(e.g. Teradata/Netezza/Greenplum/..)本身高昂的成本, 越来越多的公司开始将离线分析从传统数仓迁移到现代化数仓(HDFS + Hive + SparkSQL).
 
@@ -32,19 +32,19 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 3. [Deep Dive of ADBMS Migration to Apache Spark—Use Cases Sharing - Keith Sun eBay](https://www.youtube.com/watch?v=i-L2wtN9tyg)
 4. [Experience Of Optimizing Spark SQL When Migrating from MPP Database - Yucai Yu and Yuming Wang eBay](https://www.youtube.com/watch?v=BcenJqszr6g)
 
-#### [Structured Streaming](SparkStreming/README.md)
+### - [Structured Streaming](SparkStreming/README.md)
 
 > SparkStreaming由于Spark2.0后Dataset API的统一, 使得SparkStreaming使用Spark SQL APIs
 
-#### [GraphX](GraphX/README.md)
+### - [GraphX](GraphX/README.md)
 
-#### [MLlib](MLlib/README.md)
+### - [MLlib](MLlib/README.md)
 
-### [How to setup Spark?](installation.md)
+#### [How to setup Spark?](installation.md)
 
-### [Submit Spark Application](submit.md)
+#### [Submit Spark Application](submit.md)
 
-### [Spark Configuration](configuration.md)
+#### [Spark Configuration](configuration.md)
 
 ### Awesome Study Resources
 
@@ -61,7 +61,7 @@ Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical 
 3. [Graph Representation Learning to Prevent Payment Collusion Fraud (Venkatesh Ramanathan)](https://www.youtube.com/watch?v=eq_rpur1eNM)
 4. [PayPal Merchant ecosystem using Spark, Hive, Druid, HBase & Elasticsearch](Reading-Notes/PayPal%20Merchant%20ecosystem%20using%20Spark%2C%20Hive%2C%20Druid%2C%20HBase%20%26%20Elasticsearch.pdf)
 
-### Analyze Source Code & Contribute to the Community
+### Read Source Code & Contribute to the Community
 
-1. [Shared Analysis](Source-Code-Analysis/README.md)
-2. [Contribution](Contribution/README.md)
+1. [Shared Analysis Track](Source-Code-Analysis/README.md)
+2. [Know issues & Contribution](Contribution/README.md)
