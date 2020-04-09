@@ -59,7 +59,7 @@ Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical 
 1. [SCaaS: Spark Compute as a Service at Paypal - Prabhu Kasinathan](https://www.youtube.com/watch?v=Oqq3m4RP2tE)
 2. [Merchant Churn Prediction Using SparkML at PayPal (Chetan Nadgire and Aniket Kulkarni)](https://www.youtube.com/watch?v=v6EF1_AVvKU)
 3. [Graph Representation Learning to Prevent Payment Collusion Fraud (Venkatesh Ramanathan)](https://www.youtube.com/watch?v=eq_rpur1eNM)
-4. [PayPal Merchant ecosystem using Spark, Hive, Druid, HBase & Elasticsearch](Reading-Notes/PayPal Merchant ecosystem using Spark, Hive, Druid, HBase & Elasticsearch.pdf)
+4. [PayPal Merchant ecosystem using Spark, Hive, Druid, HBase & Elasticsearch](Reading-Notes/PayPal\ Merchant\ ecosystem\ using\ Spark,\ Hive,\ Druid,\ HBase\ &\ Elasticsearch.pdf)
 
 ### Analyze Source Code & Contribute to the Community
 
