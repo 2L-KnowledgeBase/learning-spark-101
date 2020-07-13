@@ -2,13 +2,13 @@
 
 > http://spark.apache.org
 
+### Introduction
+
 #### What is Spark ?
 
-Spark is a `___` ? Currently (these definitions are changable in developer community and updated overtime) we said ...
+Currently (these definitions are changable in developer community and updated overtime) we said *Spark is a unified analytics engine for large-scale data processing* ...
 
-*Spark is a unified analytics engine for large-scale data processing.*
-
-> 关于 *是什么的定义(what-is)* 时常随着 开源项目本身的发展 以及 PMC Member们的协商 而进行调整 (下一个Major Releasae), 简单来说, Spark是一个分布式计算框架(引擎), 很多开发者常喜欢用它和MapReduce做比较.
+> 关于 *是什么的定义(what-is)* 时常随着开源项目本身的发展以及PMC Member们的协商而进行调整(下一个Major Releasae), 简单来说, Spark是一个分布式计算框架(引擎), 很多开发者常喜欢用它和MapReduce做比较.
 
 - [Why Spark is better than Hadoop? What is the difference between them?](mapreduce-vs-spark.md)
 
@@ -22,7 +22,7 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 
 <img width="300" alt="spark stack" src="http://spark.apache.org/images/spark-stack.png">
 
-### - [Structured Dataset Query & SQL](SparkSQL/)
+#### [Structured Dataset Query & SQL](SparkSQL/)
 
 > SparkSQL在构建现代化数仓中相当流行, *现代化数仓*这一中文概念，请参考[eBay的俞育才老师在18年QCON上的sharing](Reading-Notes/eBay-俞育才-构建现代化数据仓库.v4.pdf)，由于MPP(e.g. Teradata/Netezza/Greenplum/..)本身高昂的成本, 越来越多的公司开始将离线分析从传统数仓迁移到现代化数仓(HDFS + Hive + SparkSQL).
 
@@ -32,13 +32,16 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 3. [Deep Dive of ADBMS Migration to Apache Spark—Use Cases Sharing - Keith Sun eBay](https://www.youtube.com/watch?v=i-L2wtN9tyg)
 4. [Experience Of Optimizing Spark SQL When Migrating from MPP Database - Yucai Yu and Yuming Wang eBay](https://www.youtube.com/watch?v=BcenJqszr6g)
 
-### - [Structured Streaming](SparkStreming/)
+#### [Structured Streaming](SparkStreming/)
 
 > SparkStreaming由于Spark2.0后Dataset API的统一, 使得SparkStreaming使用Spark SQL APIs
 
-### - [GraphX](GraphX/)
+#### [GraphX](GraphX/)
 
-### - [MLlib](MLlib/)
+#### [MLlib](MLlib/)
+
+
+### Get Started
 
 #### [How to setup Spark?](installation.md)
 
@@ -46,7 +49,10 @@ It also supports a rich set of higher-level tools including Spark SQL for SQL an
 
 #### [Spark Configuration](configuration.md)
 
-### Awesome Study Resources
+
+### Reference
+
+#### Awesome Study Resources
 
 Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical versions, find [here](http://spark.apache.org/documentation.html).
 
@@ -61,7 +67,8 @@ Spark lastest version doc: http://spark.apache.org/docs/latest/. For historical 
 3. [Graph Representation Learning to Prevent Payment Collusion Fraud (Venkatesh Ramanathan)](https://www.youtube.com/watch?v=eq_rpur1eNM)
 4. [PayPal Merchant ecosystem using Spark, Hive, Druid, HBase & Elasticsearch](Reading-Notes/PayPal%20Merchant%20ecosystem%20using%20Spark%2C%20Hive%2C%20Druid%2C%20HBase%20%26%20Elasticsearch.pdf)
 
-### Read Source Code & Contribute to the Community
+#### [Read Source Code](Source-Code-Analysis/)
 
-1. [Shared Analysis Track](Source-Code-Analysis/)
-2. [Known issues & Contribution](Contribution)
+#### [Contribute to the Community](Contribution)
+- Known issues
+- Submit your PR 
