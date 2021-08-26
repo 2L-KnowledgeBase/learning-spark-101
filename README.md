@@ -1,5 +1,9 @@
 # Learning Spark 101
 
+- https://github.com/2L-KnowledgeBase/FE-Rookie-101
+- https://github.com/2L-KnowledgeBase/core-java
+
+
 > http://spark.apache.org
 
 ### Introduction
